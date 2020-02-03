@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toko Susilo</title>
+    <script defer src="./ecommerce.js"></script>
+    <style>
+        table, th, td {
+            border: 3px solid green;
+            border-collapse: collapse;
+        }
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table>
+            <thead>
+                <th>Form Product</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <form action="">
+                                <p>Nama <input type="text" id="nama"></p>
+                                <p>Harga <input type="number" id="harga"></p>
+                                <p>Stock <input type="number" id="stock"></p>
+                                <p>Category
+                                    <select id="category">
+                                        <option value="Elektronik">Elektronik</option>
+                                        <option value="Pakaian">Pakaian</option>
+                                        <option value="Otomotif">Otomotif</option>
+                                    </select>
+                                </p>
+                                <p>Kondisi
+                                    <input type="radio" name="condition" value="New" checked> Baru
+                                    <input type="radio" name="condition" value="Old"> Second
+                                </p>
+                                <input type="button" value="Add Product" onclick="addNewProduct()">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Product</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nama</th>
+                                <th>Harga</th>
+                                <th>Stock</th>
+                                <th>Kategori</th>
+                                <th>Kondisi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="hasil">
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </body>
+</html>
